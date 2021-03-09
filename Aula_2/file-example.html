@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário HTML - Exemplo</title>
+</head>
+
+<body>
+  <form action="#" method="GET">
+    <div>
+      <label for="produto">Produto: </label>
+      <input type="text" id="produto" name="produto">
+      <br>
+      <fieldset>
+        <legend>Tipo de compra</legend>
+        <div>
+          <input type="radio" id="varejo" name="tipoCompra" value="varejo">
+          <label for="varejo">Varejo</label>
+        </div>
+        <div>
+          <input type="radio" id="atacado" name="tipoCompra" value="atacado">
+          <label for="atacado">Atacado</label>
+        </div>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Meio de pagamento</legend>
+        <div>
+          <input type="checkbox" id="dinheiro" name="tipoPagamento" value="dinheiro">
+          <label for="dinheiro">Dinheiro</label>
+        </div>
+        <div>
+          <input type="checkbox" id="cartao" name="tipoPagamento" value="cartao">
+          <label for="cartao">Cartão</label>
+        </div>
+        <input type="checkbox" id="cheque" name="tipoPagamento" value="cheque">
+          <label for="cheque">Cheque</label>
+      </fieldset>
+      <button>Buscar</button>
+      <button type="reset">Limpar</button>
+    </div>
+  </form>
+</body>
+
+</html>
