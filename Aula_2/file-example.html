@@ -13,7 +13,12 @@
     <div>
       <label for="produto">Produto: </label>
       <input type="text" id="produto" name="produto">
-      <br>
+      <br><br>
+      <label for="qtd">Quantidade</label>
+      <input type="number" name="qtd" id="qtd">
+      <br><br>
+      <label for="dataCompra">Data compra</label>
+      <input type="date" id="datCompra" name="datacompra">
       <fieldset>
         <legend>Tipo de compra</legend>
         <div>
@@ -37,8 +42,15 @@
           <label for="cartao">Cartão</label>
         </div>
         <input type="checkbox" id="cheque" name="tipoPagamento" value="cheque">
-          <label for="cheque">Cheque</label>
+        <label for="cheque">Cheque</label>
       </fieldset>
+      <br>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email">
+
+      <br>
+
+      <hr>
       <button>Buscar</button>
       <button type="reset">Limpar</button>
     </div>
