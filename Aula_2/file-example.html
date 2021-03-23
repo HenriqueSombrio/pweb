@@ -9,11 +9,18 @@
 </head>
 
 <body>
-  <form action="#" method="GET">
+
+  <h1>Sistema de vendas</h1>
+  <form action="#" method="GET" enctype="multipart/form-data">
     <div>
       <label for="produto">Produto: </label>
       <input type="text" id="produto" name="produto">
       <br><br>
+      <label for="produtos_list">Produtos lista</label>
+      <select name="produto_list" id="produto_list">
+        <option value="1">Caderno</option>
+        <option value="2">Lapis</option>
+      </select>
       <label for="qtd">Quantidade</label>
       <input type="number" name="qtd" id="qtd">
       <br><br>
@@ -47,10 +54,21 @@
       <br>
       <label for="email">Email</label>
       <input type="email" name="email" id="email">
-
       <br>
+      <br>
+      <label for="comentario"> Deixe um comentário</label>
+      <textarea name="comentario" id="comentario" cols="30" rows="10">
+      </textarea>
+      <br>
+      <br>
+      <label for="cor">Escolha a cor</label>
+      <input type="color" id="cor" name="cor">
 
       <hr>
+      <br><br>
+      <input type="file" accept="image/*" name="upload">
+      <br>
+      <br>
       <button>Buscar</button>
       <button type="reset">Limpar</button>
     </div>
